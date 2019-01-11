@@ -1,0 +1,96 @@
+
+
+body{
+  background-color: #373D3F
+}
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
+.navbar-header{
+  width: 100%;
+}
+.header {
+  background-color: #333333;
+}
+#movies .image  {
+ position: relative;
+ width: 100%;
+ background-position:center center;
+ background-repeat:no-repeat;
+ max-height: 150px;
+}
+
+
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: #ffffff;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.search-block{
+  padding: 20px;
+}
+#searchForm{
+float: right;
+min-width: 40%;
+padding-top: 8px;
+}
+#searchForm input, #searchForm button{
+  float: left;
+}
+#searchForm input{
+  width: 70%;
+  border-radius: 0;
+}
+#searchForm button{
+  width: 20%;
+      font-size: 12px;
+  height: 34px;
+}
+.well{
+  padding: 0;
+  border: none;
+  border-radius: 0;
+      min-height: 250px;
+}
+.well h5{
+  font-size: 14px;
+    height: 25px;
+}
+.modal-dialog-block{
+  min-width: 80%;
+}
+.view-imdb{
+  font-size: 14px;
+padding: 6px 12px;
+background: #337ab7;
+color: #fff;
+border: none;
+border-radius: 4px;
+float: right;
+}
+.view-imdb{
+  text-decoration: none;
+}
+@media (max-width: 600px){
+.modal-dialog-block {
+    min-width: 100%;
+}
+.modal-dialog-block img{
+max-height: 250px;
+margin: 0 auto;
+}
+}
+@media (max-width: 400px){
+.col-xxs-12{
+  width: 100%;
+}
+}

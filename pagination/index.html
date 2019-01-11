@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>My Pagination Project</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link href="assets/css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+
+              <a class="navbar-brand" href="#">Home</a>
+              <form id="searchForm" class="clearfix">
+                <input type="text" class="form-control" id="searchText" placeholder="Search Movies...">
+                <button type="submit" class="button" > GO </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+<div class="container">
+  <div id="movies" class="row"></div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="movieDetails" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-dialog-block" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Movie Details</h4>
+      </div>
+      <div class="modal-body">
+        <div id="movie">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="index.html" class="btn btn-default">Go Back To Search</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <button class="prev button" onclick="Pagination('prev')"> Prev </button>
+        <button class="next button" onclick="Pagination('next')"> Next </button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
